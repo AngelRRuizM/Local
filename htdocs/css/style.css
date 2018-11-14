@@ -183,10 +183,24 @@ textarea {
 }
 .top-row > div {
   float: left;
-  width: 48%;
-  margin-right: 4%;
+  width: 45%;
+  margin-right: 2%;
 }
 .top-row > div:last-child {
+  margin: 0;
+}
+
+.full-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.full-row > div {
+  float: left;
+  width: 90%;
+  margin-right: 2%;
+}
+.full-row > div:last-child {
   margin: 0;
 }
 

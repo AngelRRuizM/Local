@@ -6,8 +6,7 @@
   <title>Sign-Up/Login Form</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
+  
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -57,14 +56,17 @@
 
           <form action="insertaData.php" method="post">
 
-            <div class="field-wrap">
-              <h2>Nombre equipo</h2>
-              <label>
-                Nombre del equipo
-                <span class="req">*</span>
-              </label>
-              <input type="text" name="nombre_equipo" required autocomplete="off" />
+            <div class="full-row">
+                <div class="field-wrap">
+                    <h2>Nombre equipo</h2>
+                    <label>
+                      Nombre del equipo
+                      <span class="req">*</span>
+                    </label>
+                    <input type="text" name="nombre_equipo" required autocomplete="off" />
+                </div>
             </div>
+            <br>
 
             <div class="top-row">
               <h2>Integrante 1</h2>
@@ -82,6 +84,22 @@
                   <span class="req">*</span>
                 </label>
                 <input type="text" name="apellido" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Carrera
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="carrera1" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Semestre
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="semestre1" required autocomplete="off" />
               </div>
             </div>
 
@@ -102,11 +120,27 @@
                 </label>
                 <input type="text" name="apellido2" required autocomplete="off" />
               </div>
+
+              <div class="field-wrap">
+                <label>
+                  Carrera
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="carrera2" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Semestre
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="semestre2" required autocomplete="off" />
+              </div>
             </div>
 
             <div class="top-row">
               <h2>Integrante 3</h2>
-              <div class="field-wrap2">
+              <div class="field-wrap">
                 <label>
                   Nombre
                   <span class="req">*</span>
@@ -121,10 +155,38 @@
                 </label>
                 <input type="text" name="apellido3" required autocomplete="off" />
               </div>
+
+              <div class="field-wrap">
+                <label>
+                  Carrera
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="carrera3" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Semestre
+                  <span class="req">*</span>
+                </label>
+                <input type="text" name="semestre3" required autocomplete="off" />
+              </div>
             </div>
 
-
-
+            <div class="full-row">
+                <div class="field-wrap">
+                    <h2>Usuario de UVa</h2>
+                    <label>
+                      Usuario (ID numérico)
+                      <span class="req">*</span>
+                    </label>
+                    <input type="text" name="uva" required autocomplete="off" />
+                    
+                  </div>
+            </div>
+            
+            <br>
+                   
             <button type="submit" class="button button-block" />Registrarse</button>
 
           </form>
